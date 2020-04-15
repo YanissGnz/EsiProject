@@ -11,6 +11,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
@@ -18,11 +20,25 @@ import com.google.android.material.navigation.NavigationView;
 public class Main3Activity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     private DrawerLayout drawer;
+    ImageView addPost;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main3);
+
+        //Add New Post
+        addPost = findViewById(R.id.addpost_button);
+        addPost.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), AddPost.class);
+                startActivity(intent);
+                overridePendingTransition(R.anim.slide_in_up, R.anim.none);
+            }
+        });
+
+        //Drawer Menu and ToolBar
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -69,8 +85,7 @@ public class Main3Activity extends AppCompatActivity implements NavigationView.O
                         new ProfileFragment()).commit();
                 break;
             case R.id.nav_logout:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new LogoutFragment()).commit();
+                Toast.makeText(this,"Logout",Toast.LENGTH_SHORT).show();
                 break;
             case R.id.courses:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
