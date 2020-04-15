@@ -146,87 +146,12 @@
         app:layout_constraintTop_toBottomOf="@+id/textView6"
         app:layout_constraintVertical_bias="0.048" />
 
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Full Name"
-        android:textColor="#9e9797"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.464"
-        app:layout_constraintStart_toEndOf="@+id/textView5"
-        app:layout_constraintTop_toBottomOf="@+id/imageView6"
-        app:layout_constraintVertical_bias="0.14" />
-
-    <TextView
-        android:id="@+id/textView12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hidden"
-        android:textColor="#9e9797"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.406"
-        app:layout_constraintStart_toEndOf="@+id/textView6"
-        app:layout_constraintTop_toBottomOf="@+id/imageView6"
-        app:layout_constraintVertical_bias="0.284" />
-
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="show gender here"
-        android:textColor="#9e9797"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.838"
-        app:layout_constraintStart_toEndOf="@+id/textView7"
-        app:layout_constraintTop_toBottomOf="@+id/imageView6"
-        app:layout_constraintVertical_bias="0.424" />
-
-    <TextView
-        android:id="@+id/textView14"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="show Year here"
-        android:textColor="#9e9797"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.622"
-        app:layout_constraintStart_toEndOf="@+id/textView8"
-        app:layout_constraintTop_toBottomOf="@+id/imageView6"
-        app:layout_constraintVertical_bias="0.575" />
-
-    <TextView
-        android:id="@+id/textView15"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="show group here"
-        android:textColor="#9e9797"
-        android:textStyle="bold"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.797"
-        app:layout_constraintStart_toEndOf="@+id/textView10"
-        app:layout_constraintTop_toBottomOf="@+id/imageView6"
-        app:layout_constraintVertical_bias="0.722" />
-
     <Button
-        android:id="@+id/edit_profile"
+        android:id="@+id/save_profile"
         android:layout_width="168dp"
         android:layout_height="43dp"
         android:background="@drawable/button"
-        android:text="Edit"
+        android:text="Save"
         android:textColor="#fff"
         android:textSize="20dp"
         android:textStyle="bold"
@@ -236,5 +161,87 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView6"
         app:layout_constraintVertical_bias="0.943" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="155dp"
+        android:layout_height="50dp"
+        android:background="@drawable/changep"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+        app:layout_constraintEnd_toEndOf="@+id/imageView8"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="@+id/imageView8"
+        app:layout_constraintTop_toTopOf="@+id/profile_picture"
+        app:layout_constraintVertical_bias="0.944" />
+
+    <EditText
+        android:id="@+id/profile_name_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Shows Current name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.652"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:layout_constraintVertical_bias="0.110000014" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text="Current Password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/profile_name_edit"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="173dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="172dp"
+        android:background="#fff"
+        android:spinnerMode="dropdown"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.863"
+        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/editText2"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="173dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="128dp"
+        android:background="#fff"
+        android:spinnerMode="dropdown"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.792"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/spinner1"
+        app:layout_constraintVertical_bias="0.916" />
+
+    <Spinner
+        android:id="@+id/spinner3"
+        android:layout_width="173dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="84dp"
+        android:background="#fff"
+        android:spinnerMode="dropdown"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.876"
+        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/spinner2"
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
