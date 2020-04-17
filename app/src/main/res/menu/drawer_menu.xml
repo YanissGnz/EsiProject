@@ -28,7 +28,7 @@
             <item android:id="@+id/nav_share"
                 android:icon="@drawable/share"
                 android:title="Share"/>
-            <item android:id="@+id/nav_feedack"
+            <item android:id="@+id/nav_feedback"
                 android:icon="@drawable/feedback"
                 android:title="FeedBack"/>
         </menu>
