@@ -16,8 +16,8 @@ public class Comment {
         this.uid = uid;
         this.uimg = uimg;
         this.uname = uname;
-        //nahi el commetaire 3la l'instruction hadi ki nt'mporter el fire base
 
+        //nahi el commetaire 3la l'instruction hadi ki nt'mporter el fire base
        // this.timestamp = ServerValue.TIMESTAMP;
 
     }

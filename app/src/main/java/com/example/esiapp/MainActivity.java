@@ -8,14 +8,20 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.google.android.material.textfield.TextInputEditText;
+import com.google.android.material.textfield.TextInputLayout;
+
 public class MainActivity extends AppCompatActivity {
 
     Button login;
     TextView signUp, forgetPassword;
+
+    TextInputLayout textInputEmail;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         login = findViewById(R.id.login);
         signUp = findViewById(R.id.sign_up);

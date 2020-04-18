@@ -44,4 +44,7 @@
     <string name="confirm">Confirm</string>
     <string name="subject">Subject</string>
     <string name="descreption">Descreption</string>
+    <string name="comment">Comment</string>
+    <string name="add_comment">Add Comment</string>
+    <string name="email">Email</string>
 </resources>

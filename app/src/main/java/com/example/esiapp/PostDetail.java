@@ -1,9 +1,10 @@
 package com.example.esiapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+
 import android.os.Bundle;
 
-public class PostDetailActivity extends AppCompatActivity {
+public class PostDetail extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
