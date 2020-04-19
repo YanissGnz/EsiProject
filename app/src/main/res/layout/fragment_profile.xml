@@ -47,7 +47,7 @@
         android:id="@+id/profile_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Here Shows Profile Name"
+        android:text="Here Shows Profile Names"
         android:textSize="20dp"
         android:textColor="#ffffff"
         app:layout_constraintBottom_toBottomOf="@+id/imageView6"
